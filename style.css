@@ -1,0 +1,31 @@
+.myToast{
+    width: 200px;
+    height: 4rem;
+    background-color: green;
+    display: flex;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    animation-name: MyToastAnimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes MyToastAnimation {
+    0%{
+        opacity: 0;
+    }50%{
+             opacity: 1;
+         }
+    100%{
+        opacity: 0;
+    }
+}

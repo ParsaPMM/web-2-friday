@@ -12,6 +12,8 @@
     "vite": "^5.4.10"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "font-awesome": "^4.7.0",
+    "joi": "^17.13.3"
   }
 }

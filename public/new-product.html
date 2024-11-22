@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../style.css">
+    <link rel="stylesheet" href="./../node_modules/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+<header >
+    <div class="container pt-5 border-bottom border-2">
+        <h1>Ecommerce Pannel Admin</h1>
+    </div>
+</header>
+<main class="container py-4 d-flex gap-5">
+    <aside class="w-25">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="./products">
+                    Products
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="./new-product">
+                    New Product
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="./users">
+                    Users
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="./new-user">
+                    New User
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <div class="w-75">
+        <h2 class="my-3">
+            Create new Product
+        </h2>
+        <form id="create_product_form" novalidate>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" >Title</span>
+                <input type="text" name="title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <div class="invalid-feedback">
+                    Please provide valid title.
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" >Price</span>
+                <input type="text" name="price" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <div class="invalid-feedback">
+                    Please provide a valid price.
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" >Quantity</span>
+                <input type="text" name="quantity" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <div class="invalid-feedback">
+                    Please provide a valid quantity.
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Description</span>
+                <input type="text" name="description" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <div class="invalid-feedback">
+                    Please provide valid description
+                </div>
+            </div>
+            <button class="btn btn-primary">
+                Save
+            </button>
+        </form>
+    </div>
+</main>
+
+
+
+<script type="module" src="../new-product.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

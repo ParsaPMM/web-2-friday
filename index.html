@@ -8,8 +8,40 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+
+  <header >
+    <div class="container pt-5 border-bottom border-2">
+      <h1>Ecommerce Pannel Admin</h1>
+    </div>
+  </header>
+  <main class="container py-4">
+    <aside class="w-25">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a href="public/products">
+            Products
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="public/new-product">
+            New Product
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="/users">
+            Users
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="public/new-user">
+            New User
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+    <script type="module" src="./main.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
